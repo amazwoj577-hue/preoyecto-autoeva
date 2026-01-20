@@ -1,0 +1,110 @@
+ejercicio 1:
+
+para crear la carpeta se puede desde la consola de git o desde los archivos del sistema.
+
+para hacerlo
+
+ls
+cd Documents
+ls
+cd proyecto-autoeva
+git init
+git config --global user.name "amazwoj577-hue"
+git config --global user.email "amazwoj577@iesfuengirola1.es"
+
+git config --global user.name
+amazwoj577-hue
+
+git config --global user.email
+amazwoj577@iesfuengirola1.es
+
+1. ¿Para qué sirve el comando git init?¿Qué carpeta oculta se crea automáticamente para rastrear los cambios?.
+para iniciar el repositorio de git en la carpeta en la que se esta
+
+2. ¿Qué comando has usado para confirmar que tu identidad es la correcta antes de empezar?
+
+git config --global user.name
+
+
+
+tarea 2:
+
+mkdir para crear los archivos
+index.html, README.txt y secreto.txt.
+ls para confirmar que se crearon.
+
+git status miro que el index esta modificado y se tiene que aplicar
+git add .
+git commit -m 'Angel Mazuecos: texto inicial html'
+git log
+
+1. ¿Por qué es importante el uso de .gitignore en proyectos profesionales?
+para ocultar archivos innecesarios
+
+2. Si un archivo está "preparado" (staged), ¿en qué área de Git se encuentra y cuál es el comando para ver esta diferencia antes de confirmar?.
+en el indice
+
+comando git status para ver
+
+
+tarea 3:
+
+git Branch  para ver ramas iniciales
+git checkout -b incluir-estilos  crea y se mete en la rama
+git Branch confirmar que se creo
+touch estilos.css  liada antes por usar mkdir que crea carpetas
+git status
+git add .
+git commit -m
+
+
+git status
+git add .
+git commit -m
+git log --oneline
+git push  para subir lo realizado
+
+git checkout master
+
+1. ¿Qué ocurre con los archivos de tu carpeta local cuando saltas de una rama a otra? 
+que no son afectados por los cambios de las otras ramas, solo los archivos de la rama seleccionada
+
+2. ¿Cuál es la principal ventaja de trabajar con ramas independientes en lugar de hacer todo en la rama main?.
+
+poder modificar los archivos y comprobar errores sin afectar a los originales ni a los compañeros 
+
+
+tarea 4:
+
+git remote -v
+git remote add origin https://github.com/amazwoj577-hue/preoyecto-autoeva.git
+git remote -v
+git push 
+git fetch origin
+
+git push   subir cambios
+
+1. Al clonar un repositorio, ¿qué nombre recibe por defecto el servidor remoto en nuestra configuración local?.
+origin
+
+2. ¿Qué comando usarías para ver la URL del servidor remoto que acabas de configurar?
+git remote -v
+
+
+tarea 5;
+
+cambios realizados
+
+git fetch
+git pull
+
+1. ¿Qué comandos has utilizado para comprobar si el repositorio local está actualizado? 
+git fetch
+
+2. ¿Cuál es la diferencia fundamental entre ejecutar un git fetch y git pull según lo que acabas de experimentar?.
+
+git fetch mira si se realizaron cambios pero no los aplica
+git pull aplica los cambios
+
+
+
